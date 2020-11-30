@@ -23,15 +23,14 @@ namespace web_api_cs.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<CampModel[]>> GetCamps()
+        public async Task<ActionResult<CampModel[]>> GetCamps(bool includeTalks = false)
         {
             try
             {
-                var results = await _repository.GetAllCampsAsync();
+                var results = await _repository.GetAllCampsAsync(includeTalks);
 
                 return _mapper.Map<CampModel[]>(results);
             }
-
             catch (Exception)
             {
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Database 500 Error");
@@ -50,6 +49,23 @@ namespace web_api_cs.Controllers
             catch (Exception)
             {
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Database 500 Error");
+            }
+        }
+
+        [HttpGet("search")]
+        public async Task<ActionResult<CampModel[]>> SearchByDate(DateTime theDate)
+        {
+            try
+            {
+                var results = await _repository.GetAllCampsByEventDate(theDate);
+
+                if (!results.Any()) return NotFound();
+
+                return _mapper.Map<CampModel[]>(results);
+            }
+            catch (Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Database failed");
             }
         }
     }

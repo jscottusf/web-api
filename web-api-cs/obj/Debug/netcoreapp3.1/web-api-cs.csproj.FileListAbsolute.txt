@@ -124,5 +124,8 @@ C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\obj\Debug\netcoreapp3
 C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\obj\Debug\netcoreapp3.1\web-api-cs.genruntimeconfig.cache
 C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\obj\Debug\netcoreapp3.1\web-api-cs.csproj.CoreCompileInputs.cache
 C:\Users\Joel.Scott\source\tutorials\web-api-cs\web-api-cs\obj\Debug\netcoreapp3.1\web-api-cs.MvcApplicationPartsAssemblyInfo.cache
